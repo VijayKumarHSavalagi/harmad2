@@ -1,0 +1,375 @@
+hal(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/vlsi15/RF22EC011/EXP2/cds.lib -logfile hal.log worklib.shift_and_add_binary_multiplier_tb:module.
+hal: Snapshot:  worklib.shift_and_add_binary_multiplier_tb:module.
+hal: Workspace: /home/vlsi15/RF22EC011/EXP2.
+hal: Date: Fri Feb 28 09:50:43 IST 2025.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+module shift_and_add_binary_multiplier_tb;
+|
+halcheck: *N,IDLENG (./boot_multiplier_tb.v,2|0): Identifier name 'shift_and_add_binary_multiplier_tb' is not of appropriate length (4 to 16 characters).
+`timescale 1ns/1ns
+|
+halcheck: *N,CDNOTE (./boot_multiplier_tb.v,1|0): The compiler directive '`timescale' is used in the RTL.
+begin #100 $finish;
+|
+halcheck: *W,SEPLIN (./boot_multiplier_tb.v,31|0): Use a separate line for each HDL statement.
+module shift_and_add_binary_multiplier_tb;
+|
+halcheck: *W,DIFFMN (./boot_multiplier_tb.v,2|0): Module name 'shift_and_add_binary_multiplier_tb' differs from file name 'boot_multiplier_tb.v'.
+module shift_and_add_binary_multiplier_tb;
+|
+halcheck: *W,NEEDIO (./boot_multiplier_tb.v,2|0): Top-level module 'shift_and_add_binary_multiplier_tb' has no inputs/outputs/inouts.
+shift_and_add_binary_multiplier uut(clk, rst, A, B, C);
+|
+halcheck: *W,CBYNAM (./boot_multiplier_tb.v,8|0): Port connections for instance 'uut' of module 'shift_and_add_binary_multiplier' should be made by name rather than by positional ordered list.
+wire [m+n-1:0] C;
+|
+halcheck: *W,LCVARN (./boot_multiplier_tb.v,7|0): Net name 'C' uses uppercase characters.
+reg[m-1:0] A;
+|
+halcheck: *W,LCVARN (./boot_multiplier_tb.v,5|0): Register name 'A' uses uppercase characters.
+reg[n-1:0] B;
+|
+halcheck: *W,LCVARN (./boot_multiplier_tb.v,6|0): Register name 'B' uses uppercase characters.
+parameter m=4, n=4;
+|
+halcheck: *N,IDLENG (./boot_multiplier_tb.v,3|0): Identifier name 'm' is not of appropriate length (4 to 16 characters).
+parameter m=4, n=4;
+|
+halcheck: *W,UCCONN (./boot_multiplier_tb.v,3|0): Lowercase characters used for identifier 'm'. Use uppercase characters for names of constants and user-defined types.
+parameter m=4, n=4;
+|
+halcheck: *W,PRMVAL (./boot_multiplier_tb.v,3|0): Bit width not specified for parameter 'm'.
+parameter m=4, n=4;
+|
+halcheck: *N,IDLENG (./boot_multiplier_tb.v,3|0): Identifier name 'n' is not of appropriate length (4 to 16 characters).
+parameter m=4, n=4;
+|
+halcheck: *W,UCCONN (./boot_multiplier_tb.v,3|0): Lowercase characters used for identifier 'n'. Use uppercase characters for names of constants and user-defined types.
+parameter m=4, n=4;
+|
+halcheck: *W,PRMVAL (./boot_multiplier_tb.v,3|0): Bit width not specified for parameter 'n'.
+begin
+|
+halcheck: *W,NOBLKN (./boot_multiplier_tb.v,10|0): Each block should be labeled with a meaningful name.
+forever #4 clk =~clk;
+|
+halcheck: *W,SEPLIN (./boot_multiplier_tb.v,12|0): Use a separate line for each HDL statement.
+begin
+|
+halcheck: *W,NOBLKN (./boot_multiplier_tb.v,15|0): Each block should be labeled with a meaningful name.
+rst = 1;
+|
+halcheck: *W,IMPDTC (./boot_multiplier_tb.v,16|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit shift_and_add_binary_multiplier_tb.
+rst = 1;
+|
+halcheck: *W,INTTOB (./boot_multiplier_tb.v,16|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit shift_and_add_binary_multiplier_tb.
+rst = 1;
+|
+halcheck: *W,TRUNCZ (./boot_multiplier_tb.v,16|0): Truncation in constant conversion without a loss of bits in module/design-unit shift_and_add_binary_multiplier_tb.
+#2 rst = 0;
+|
+halcheck: *W,IMPDTC (./boot_multiplier_tb.v,17|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit shift_and_add_binary_multiplier_tb.
+#2 rst = 0;
+|
+halcheck: *W,INTTOB (./boot_multiplier_tb.v,17|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit shift_and_add_binary_multiplier_tb.
+#2 rst = 0;
+|
+halcheck: *W,TRUNCZ (./boot_multiplier_tb.v,17|0): Truncation in constant conversion without a loss of bits in module/design-unit shift_and_add_binary_multiplier_tb.
+#20 rst = 1;
+|
+halcheck: *W,IMPDTC (./boot_multiplier_tb.v,20|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit shift_and_add_binary_multiplier_tb.
+#20 rst = 1;
+|
+halcheck: *W,INTTOB (./boot_multiplier_tb.v,20|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit shift_and_add_binary_multiplier_tb.
+#20 rst = 1;
+|
+halcheck: *W,TRUNCZ (./boot_multiplier_tb.v,20|0): Truncation in constant conversion without a loss of bits in module/design-unit shift_and_add_binary_multiplier_tb.
+#2 rst = 0;
+|
+halcheck: *W,IMPDTC (./boot_multiplier_tb.v,21|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit shift_and_add_binary_multiplier_tb.
+#2 rst = 0;
+|
+halcheck: *W,INTTOB (./boot_multiplier_tb.v,21|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit shift_and_add_binary_multiplier_tb.
+#2 rst = 0;
+|
+halcheck: *W,TRUNCZ (./boot_multiplier_tb.v,21|0): Truncation in constant conversion without a loss of bits in module/design-unit shift_and_add_binary_multiplier_tb.
+#20 rst = 1;
+|
+halcheck: *W,IMPDTC (./boot_multiplier_tb.v,24|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit shift_and_add_binary_multiplier_tb.
+#20 rst = 1;
+|
+halcheck: *W,INTTOB (./boot_multiplier_tb.v,24|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit shift_and_add_binary_multiplier_tb.
+#20 rst = 1;
+|
+halcheck: *W,TRUNCZ (./boot_multiplier_tb.v,24|0): Truncation in constant conversion without a loss of bits in module/design-unit shift_and_add_binary_multiplier_tb.
+#2 rst = 0;
+|
+halcheck: *W,IMPDTC (./boot_multiplier_tb.v,25|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit shift_and_add_binary_multiplier_tb.
+#2 rst = 0;
+|
+halcheck: *W,INTTOB (./boot_multiplier_tb.v,25|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit shift_and_add_binary_multiplier_tb.
+#2 rst = 0;
+|
+halcheck: *W,TRUNCZ (./boot_multiplier_tb.v,25|0): Truncation in constant conversion without a loss of bits in module/design-unit shift_and_add_binary_multiplier_tb.
+#20;
+|
+halcheck: *W,EMPSTM (./boot_multiplier_tb.v,28|0): Module 'shift_and_add_binary_multiplier_tb' contains an empty statement.
+begin #100 $finish;
+|
+halcheck: *W,NOBLKN (./boot_multiplier_tb.v,31|0): Each block should be labeled with a meaningful name.
+begin #100 $finish;
+|
+halcheck: *W,BADSYS (./boot_multiplier_tb.v,31|0): System task $finish in module 'shift_and_add_binary_multiplier_tb' is ignored.
+shift_and_add_binary_multiplier uut(clk, rst, A, B, C);
+|
+halcheck: *N,IDLENG (./boot_multiplier_tb.v,8|0): Identifier name 'uut' is not of appropriate length (4 to 16 characters).
+module shift_and_add_binary_multiplier(clk, rst, A, B, C);
+|
+halcheck: *N,IDLENG (./boot_multiplier.v,2|0): Identifier name 'shift_and_add_binary_multiplier' is not of appropriate length (4 to 16 characters).
+`timescale 1ns/1ns
+|
+halcheck: *N,CDNOTE (./boot_multiplier.v,1|0): The compiler directive '`timescale' is used in the RTL.
+begin C=0;
+|
+halcheck: *W,SEPLIN (./boot_multiplier.v,14|0): Use a separate line for each HDL statement.
+module shift_and_add_binary_multiplier(clk, rst, A, B, C);
+|
+halcheck: *W,DIFFMN (./boot_multiplier.v,2|0): Module name 'shift_and_add_binary_multiplier' differs from file name 'boot_multiplier.v'.
+module shift_and_add_binary_multiplier(clk, rst, A, B, C);
+|
+halcheck: *N,PRTCNT (./boot_multiplier.v,2|0): Module/Entity 'shift_and_add_binary_multiplier' contains '5' ports.
+halcheck: (./boot_multiplier.v,2): Number of Input ports: 4.
+halcheck: (./boot_multiplier.v,2): Number of Output ports: 1.
+input clk, rst;
+|
+halcheck: *N,DECLIN (./boot_multiplier.v,5|0): Use a separate line for each HDL declaration.
+input[m-1:0] A;
+|
+halcheck: *W,LCVARN (./boot_multiplier.v,6|0): Net name 'A' uses uppercase characters.
+input[n-1:0] B;
+|
+halcheck: *W,LCVARN (./boot_multiplier.v,7|0): Net name 'B' uses uppercase characters.
+output reg[m+n-1:0]C;
+|
+halcheck: *W,LCVARN (./boot_multiplier.v,8|0): Register name 'C' uses uppercase characters.
+reg[m+n-1:0]A1;
+|
+halcheck: *W,LCVARN (./boot_multiplier.v,9|0): Register name 'A1' uses uppercase characters.
+reg[m+n-1:0]A1;
+|
+halcheck: *W,NUMSUF (./boot_multiplier.v,9|0): Identifier 'A1' has a numeric value suffix.
+reg[n-1:0]B1;
+|
+halcheck: *W,LCVARN (./boot_multiplier.v,10|0): Register name 'B1' uses uppercase characters.
+reg[n-1:0]B1;
+|
+halcheck: *W,NUMSUF (./boot_multiplier.v,10|0): Identifier 'B1' has a numeric value suffix.
+parameter m=4, n=4;
+|
+halcheck: *N,IDLENG (./boot_multiplier.v,3|0): Identifier name 'm' is not of appropriate length (4 to 16 characters).
+parameter m=4, n=4;
+|
+halcheck: *W,UCCONN (./boot_multiplier.v,3|0): Lowercase characters used for identifier 'm'. Use uppercase characters for names of constants and user-defined types.
+parameter m=4, n=4;
+|
+halcheck: *W,PRMVAL (./boot_multiplier.v,3|0): Bit width not specified for parameter 'm'.
+parameter m=4, n=4;
+|
+halcheck: *N,IDLENG (./boot_multiplier.v,3|0): Identifier name 'n' is not of appropriate length (4 to 16 characters).
+parameter m=4, n=4;
+|
+halcheck: *W,UCCONN (./boot_multiplier.v,3|0): Lowercase characters used for identifier 'n'. Use uppercase characters for names of constants and user-defined types.
+parameter m=4, n=4;
+|
+halcheck: *W,PRMVAL (./boot_multiplier.v,3|0): Bit width not specified for parameter 'n'.
+begin
+|
+halcheck: *W,NOBLKN (./boot_multiplier.v,12|0): Each block should be labeled with a meaningful name.
+begin C=0;
+|
+halcheck: *W,IMPDTC (./boot_multiplier.v,14|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit uut.
+begin C=0;
+|
+halcheck: *W,BLKSQB (./boot_multiplier.v,14|0): Blocking assignment encountered in a sequential block.
+begin C=0;
+|
+halcheck: *W,TRUNCZ (./boot_multiplier.v,14|0): Truncation in constant conversion without a loss of bits in module/design-unit uut.
+C=0;
+|
+halcheck: *W,IMPDTC (./boot_multiplier.v,18|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit uut.
+C=0;
+|
+halcheck: *W,BLKSQB (./boot_multiplier.v,18|0): Blocking assignment encountered in a sequential block.
+C=0;
+|
+halcheck: *W,TRUNCZ (./boot_multiplier.v,18|0): Truncation in constant conversion without a loss of bits in module/design-unit uut.
+A1[m-1:0]=A;
+|
+halcheck: *W,BLKSQB (./boot_multiplier.v,19|0): Blocking assignment encountered in a sequential block.
+A1[m+n-1:m]=0;
+|
+halcheck: *W,IMPDTC (./boot_multiplier.v,20|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit uut.
+A1[m+n-1:m]=0;
+|
+halcheck: *W,BLKSQB (./boot_multiplier.v,20|0): Blocking assignment encountered in a sequential block.
+A1[m+n-1:m]=0;
+|
+halcheck: *W,TRUNCZ (./boot_multiplier.v,20|0): Truncation in constant conversion without a loss of bits in module/design-unit uut.
+B1=B;
+|
+halcheck: *W,BLKSQB (./boot_multiplier.v,21|0): Blocking assignment encountered in a sequential block.
+C=C+0;
+|
+halcheck: *W,IMPTYP (./boot_multiplier.v,26|0): Expression 'C + 0' implicitly converted to type 'register' from type 'integer'.
+C=C+0;
+|
+halcheck: *W,BLKSQB (./boot_multiplier.v,26|0): Blocking assignment encountered in a sequential block.
+C=C+0;
+|
+halcheck: *W,POIASG (./boot_multiplier.v,26|0): The result of addition operation may lead to a potential overflow in module/design-unit uut.
+halcheck: (./boot_multiplier.v,26): LHS operand 'C' is 8 bit(s), RHS operand 'C + 0' is 32 bit(s).
+halcheck: (./boot_multiplier.v,26): Increase the size of LHS by 24 bit(s).
+C=C+0;
+|
+halcheck: *W,UELOPR (./boot_multiplier.v,26|0): Unequal length operand in bit/arithmetic operator PLUS in module/design-unit uut.
+halcheck: (./boot_multiplier.v,26): LHS operand 'C' is 8 bits, RHS operand '0' is 32 bits.
+C=C+(A1<<i);
+|
+halcheck: *W,BLKSQB (./boot_multiplier.v,30|0): Blocking assignment encountered in a sequential block.
+C=C+(A1<<i);
+|
+halcheck: *W,OPLVNC (./boot_multiplier.v,30|0): 'addition' operation between loop variable 'i' and non constant value 'C'.
+C=C+(A1<<i);
+|
+halcheck: *W,MXUANS (./boot_multiplier.v,30|0): Expression 'C + (A1 << i)' in module/design-unit uut has both signed and unsigned variables/constants.
+halcheck: (./boot_multiplier.v,30): Variable 'i' is signed.
+halcheck: (./boot_multiplier.v,30): Variable 'A1' is unsigned.
+halcheck: (./boot_multiplier.v,30): Variable 'C' is unsigned.
+C=C+(A1<<i);
+|
+halcheck: *W,RPTVAR (./boot_multiplier.v,30|0): Variable 'C' is used repeatedly in the statement inside the loop body.
+wire [m+n-1:0] C;
+|
+halcheck: *W,URDWIR (./boot_multiplier_tb.v,7|0): Wire 'C' defined in module 'shift_and_add_binary_multiplier_tb' does not drive any object, but is assigned at least once.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 69.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.s086..-(): (c) Copyright 1995 - 2020 Cadence Design Systems, Inc.
+cfe64 Build : Mon Dec  7 22:53:08 IST 2020 ldvopt223
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+always@(posedge clk or posedge rst)
+|
+halsynth: *W,FFASMX (./boot_multiplier.v,11|0): In the specified always/process block, descriptions of flip-flops with and without asynchronous set/reset are mixed. Flip-flops without asynchronous set/reset are: A1[3:0], A1[7:4], B1.
+initial
+|
+halsynth: *W,INIUSP (./boot_multiplier_tb.v,9|0): Module shift_and_add_binary_multiplier_tb has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+initial
+|
+halsynth: *W,INIUSP (./boot_multiplier_tb.v,14|0): Module shift_and_add_binary_multiplier_tb has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+initial
+|
+halsynth: *W,INIUSP (./boot_multiplier_tb.v,30|0): Module shift_and_add_binary_multiplier_tb has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 4.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+shift_and_add_binary_multiplier uut(clk, rst, A, B, C);
+|
+halstruct: *E,UNCONI (./boot_multiplier_tb.v,8|0): Input port 'clk' of entity/module 'shift_and_add_binary_multiplier' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'shift_and_add_binary_multiplier_tb.uut'.
+halstruct: (./boot_multiplier_tb.v,8): 'clk' mapped to actual expression 'clk' which is undriven.
+shift_and_add_binary_multiplier uut(clk, rst, A, B, C);
+|
+halstruct: *E,UNCONI (./boot_multiplier_tb.v,8|0): Input port 'rst' of entity/module 'shift_and_add_binary_multiplier' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'shift_and_add_binary_multiplier_tb.uut'.
+halstruct: (./boot_multiplier_tb.v,8): 'rst' mapped to actual expression 'rst' which is undriven.
+shift_and_add_binary_multiplier uut(clk, rst, A, B, C);
+|
+halstruct: *E,UNCONI (./boot_multiplier_tb.v,8|0): Input port 'A' of entity/module 'shift_and_add_binary_multiplier' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'shift_and_add_binary_multiplier_tb.uut'.
+halstruct: (./boot_multiplier_tb.v,8): 'A[3:0]' mapped to actual expression 'A' which is undriven.
+shift_and_add_binary_multiplier uut(clk, rst, A, B, C);
+|
+halstruct: *E,UNCONI (./boot_multiplier_tb.v,8|0): Input port 'B' of entity/module 'shift_and_add_binary_multiplier' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'shift_and_add_binary_multiplier_tb.uut'.
+halstruct: (./boot_multiplier_tb.v,8): 'B[3:0]' mapped to actual expression 'B' which is undriven.
+halstruct: (./boot_multiplier_tb.v,8): 'B[3]' mapped to actual expression 'B' which is undriven.
+halstruct: (./boot_multiplier_tb.v,8): 'B[2]' mapped to actual expression 'B' which is undriven.
+halstruct: (./boot_multiplier_tb.v,8): 'B[1]' mapped to actual expression 'B' which is undriven.
+halstruct: (./boot_multiplier_tb.v,8): 'B[0]' mapped to actual expression 'B' which is undriven.
+shift_and_add_binary_multiplier uut(clk, rst, A, B, C);
+|
+halstruct: *W,UNCONO (./boot_multiplier_tb.v,8|0): Port 'C' (which is being used as an output) of entity/module 'shift_and_add_binary_multiplier' is being driven inside the design, but not connected (either partially or completely) in its instance 'shift_and_add_binary_multiplier_tb.uut'.
+C=C+(A1<<i);
+|
+halstruct: *W,ASNRST (./boot_multiplier.v,30|0): Flip-flop 'shift_and_add_binary_multiplier_tb.uut.C' has 'active_high' asynchronous set/reset 'rst' as against the recommended 'active_low' style.
+C=C+(A1<<i);
+|
+halstruct: *N,FFASRT (./boot_multiplier.v,30|0): Flip-flop 'C' has an asynchronous reset 'rst'.
+input clk, rst;
+|
+halstruct: *N,CLKINF (./boot_multiplier.v,5|0): Signal 'shift_and_add_binary_multiplier_tb.uut.clk' was inferred as clock.
+halstruct: (./boot_multiplier.v,5): Clock source is signal 'shift_and_add_binary_multiplier_tb.uut.clk'.
+halstruct: (./boot_multiplier.v,30): Drives the flip-flop 'shift_and_add_binary_multiplier_tb.uut.C'.
+C=C+(A1<<i);
+|
+halstruct: *W,ACNCPI (./boot_multiplier.v,30|0): Asynchronous reset 'rst' of latch/flip-flop 'shift_and_add_binary_multiplier_tb.uut.C' is not controllable from primary inputs.
+C=C+(A1<<i);
+|
+halstruct: *W,CLKNPI (./boot_multiplier.v,30|0): Flip-flop 'shift_and_add_binary_multiplier_tb.uut.C' has clock 'clk' which is not derived from primary input.
+halstruct: (./boot_multiplier_tb.v,4): Derived from local variable 'clk'.
+A1[m-1:0]=A;
+|
+halstruct: *N,INFNOT (./boot_multiplier.v,19|0): Ignoring flipflop 'A1[3:0]' with no fanout to module/design-unit outputs or child instances.
+A1[m+n-1:m]=0;
+|
+halstruct: *N,INFNOT (./boot_multiplier.v,20|0): Ignoring flipflop 'A1[7:4]' with no fanout to module/design-unit outputs or child instances.
+B1=B;
+|
+halstruct: *N,INFNOT (./boot_multiplier.v,21|0): Ignoring flipflop 'B1' with no fanout to module/design-unit outputs or child instances.
+module shift_and_add_binary_multiplier_tb;
+|
+halstruct: *N,NUMDFF (./boot_multiplier_tb.v,2|0): Number of single-bit D flip-flops present in the hierarchy is 8.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 4.
+halstruct: Total warnings = 4.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Errors   : (4)
+  UNCONI (4)     
+
+ Warnings : (77)
+  ACNCPI (1)      ASNRST (1)      BADSYS (1)      BLKSQB (7)     
+  CBYNAM (1)      CLKNPI (1)      DIFFMN (2)      EMPSTM (1)     
+  FFASMX (1)      IMPDTC (9)      IMPTYP (1)      INIUSP (3)     
+  INTTOB (6)      LCVARN (8)      MXUANS (1)      NEEDIO (1)     
+  NOBLKN (4)      NUMSUF (2)      OPLVNC (1)      POIASG (1)     
+  PRMVAL (4)      RPTVAR (1)      SEPLIN (3)      TRUNCZ (9)     
+  UCCONN (4)      UELOPR (1)      UNCONO (1)      URDWIR (1)     
+
+ Notes    : (17)
+  CDNOTE (2)      CLKINF (1)      DECLIN (1)      FFASRT (1)     
+  IDLENG (7)      INFNOT (3)      NUMDFF (1)      PRTCNT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/vlsi15/RF22EC011/EXP2/cds.lib -sortby severity -sortby category -sortby tag hal.log
+

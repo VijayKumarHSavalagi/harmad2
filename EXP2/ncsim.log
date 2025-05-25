@@ -1,0 +1,16 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm shift_and_add_binary_multiplier_tb.A shift_and_add_binary_multiplier_tb.B shift_and_add_binary_multiplier_tb.C shift_and_add_binary_multiplier_tb.clk shift_and_add_binary_multiplier_tb.rst
+Created probe 1
+ncsim> run
+Simulation complete via $finish(1) at time 100 NS + 0
+./boot_multiplier_tb.v:31 begin #100 $finish;
+ncsim> ^C
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 294.7M data = 333.3M total (336.9M Peak)
+ncsim: CPU Usage - 0.9s system + 0.5s user = 1.5s total (131.7s, 1.1% cpu)
